@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Ciberataque</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vh;
+            height: 100vh;
+            background-color: #000; /* Black background */
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .flashing-sign {
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            animation: flash 1s infinite;
+        }
+
+        @keyframes flash {
+            0%, 100% {
+                color: white; /* White text */
+                text-shadow: 0 0 20px white;
+            }
+            50% {
+                color: green; /* Green text */
+                text-shadow: 0 0 20px green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flashing-sign">Foste Ciberatacado!</div>
+</body>
+</html>
