@@ -8,22 +8,23 @@
         body {
             margin: 0;
             padding: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100vh;
-            height: 100vh;
             background-color: #000; /* Black background */
-            color: #fff;
             font-family: Arial, sans-serif;
+            overflow: hidden;
         }
 
         .flashing-sign {
-            font-size: 4rem;
-            font-weight: bold;
+            width: 100%; /* Full width */
             text-align: center;
+            font-size: 5rem; /* Adjust font size as needed */
+            font-weight: bold;
             text-transform: uppercase;
             animation: flash 1s infinite;
+            white-space: nowrap;
         }
 
         @keyframes flash {
